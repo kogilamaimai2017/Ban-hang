@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass-white: rgba(255, 255, 255, 0.1);
+  --color-glass-border: rgba(255, 255, 255, 0.2);
+  --color-glass-dark: rgba(15, 23, 42, 0.8);
+  --color-accent-sky: #38bdf8;
+}
+
+body {
+  background-color: #0f172a;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.frosted-glass {
+  background: var(--color-glass-dark);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--color-glass-border);
+}
+
+.inner-glass {
+  background: var(--color-glass-white);
+  border: 1px solid var(--color-glass-border);
+}
